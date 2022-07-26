@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{generated_title}}</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for jelle.io" href="/rss.xml" />
+    <link href="https://fonts.googleapis.com/css?family=Astloch|IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="post">
+  <article>
+    {{{content_html}}}
+  </article>
+  <p>Leave a comment on <a href="https://www.are.na/block/{{id}}">Are.na</a></p>
+  <p><a href="index.html">← back</a></p>
+  <script>
+    h = document.querySelector("h1");
+    h.setAttribute("content", h.textContent);
+    h.setAttribute("onclick", "window.location = '/'");
+  </script>
+  </body>
+</html>
+

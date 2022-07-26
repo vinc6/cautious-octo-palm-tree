@@ -1,0 +1,120 @@
+:root {
+  --primary: #3c3cff;
+  --primary-secondary: #424242;
+  --secondary: white;
+  --secondary-tertiary: #28286d;
+  --tertiary: #222;
+  --primary-font:'IBM Plex Sans', sans-serif;
+  --secondary-font: Astloch, cursive;
+}
+
+body {
+  font-family: var(--primary-font);
+  margin:auto;
+  font-size: 18px;
+  padding: 0.7em;
+  overflow-x: hidden;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.index {
+  text-align: center;
+  background-color: var(--tertiary);
+  text-transform: lowercase;
+}
+
+.post {
+  max-width: 36em;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.7em;
+}
+
+h1 a {
+  position: relative;
+}
+
+h1 a:hover:visited {
+  color: var(--secondary);
+}
+
+h1 a:hover .deco {
+  display:none;
+}
+
+h1 a:visited { 
+  color: var(--primary-secondary);
+}
+
+h1 a:visited .deco {
+  color: var(--secondary-tertiary);  
+}
+
+.deco {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  color: var(--primary);
+  font-family: var(--secondary-font);
+  text-transform: none;
+}
+
+.post h1 {
+  color: var(--primary);
+  position:relative;
+  text-align: center;
+  margin: 1.7em 0;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.post h1:after {
+  content: attr(content);
+  position: absolute;
+  top: 0.3em;
+  left: 0;
+  width: 100%;
+  color: var(--tertiary);
+  font-family: var(--secondary-font);
+  text-transform: none;
+  opacity: 0.8;
+  text-transform: none;
+}
+
+.post h1:hover:after {
+  content: "click to go back";
+  font-size: 0.3em;
+  top: -3em;
+  font-family: var(--primary-font); 
+}
+
+h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+article {
+  margin-bottom: 3em;
+}
+
+blockquote {
+  border-left: 3px var(--primary) solid;
+  padding-left: 1em;
+  margin: 2em 0;
+}
+
+@media (min-height: 680px){
+  .index {
+    padding-top: 4em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+}
